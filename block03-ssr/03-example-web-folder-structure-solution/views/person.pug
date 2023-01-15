@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  .user-profile
+    h1 This is #{person.name}. #{person.gender == "male" ? "He" : "She"} does not exist.
+    img(src=person.profile_picture alt="Profile Picture")
+    p Age: #{person.age}
+    p Gender: #{person.gender}
+    p City: #{person.city}
+    .social
+      a(href=person.social_media.facebook) Facebook
+      a(href=person.social_media.twitter) Twitter
+      a(href=person.social_media.instagram) Instagram

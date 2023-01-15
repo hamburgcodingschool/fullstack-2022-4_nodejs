@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 These people don't exist.
+  table
+    tr
+      th Picture
+      th Name
+      th Age
+    each person in people
+      tr
+        td 
+          img(src=person.profile_picture width="50")
+        td
+          a(href=`/person/${person.id}`) #{person.name}
+        td #{person.age}
