@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+  <div class="user-profile">
+    <h1>This is <%= person.name %>. <%= person.gender == "male" ? "He" : "She" %> does not exist.</h1>
+    <img src="<%= person.profile_picture %>" alt="Profile Picture">
+    <p>Age: <%= person.age %></p>
+    <p>Gender: <%= person.gender %></p>
+    <p>City: <%= person.city %></p>
+    <div class="social">
+      <a href="https://www.facebook.com/johnsmith">Facebook</a>
+      <a href="https://twitter.com/johnsmith">Twitter</a>
+      <a href="https://www.instagram.com/johnsmith">Instagram</a>
+    </div>
+  </div>
+<%- include("partials/footer.ejs") %>
