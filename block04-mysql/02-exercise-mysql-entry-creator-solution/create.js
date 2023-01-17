@@ -15,12 +15,11 @@ name = readlineSync.question("Name:");
 race = readlineSync.question("Race:");
 actor = readlineSync.question("Actor:");
 
-const queryString = `INSERT INTO characters (name, race, actor) VALUES ('${name}', '${race}', '${actor}')`;
+const queryString = `INSERT INTO characters (name, race, actor) VALUES (?,?,?)`;
 
-console.log(queryString);
-
-connection.query(queryString, function(err, results, fields) {
-  if (err) {
+connection.prepare(queryString, function(err, statement) {
+  statement.execute([name, race, actor], (err, rows) => {
+    if (err) {
       console.log(err);
       console.log("There was an error...");
       connection.end();
@@ -28,6 +27,6 @@ connection.query(queryString, function(err, results, fields) {
   }
 
   console.log("Character added successfully!");
-
   connection.end();
+  });
 });
