@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "city": "New York",
+    "age": 35,
+    "gender": "male",
+    "profile_picture": "https://xsgames.co/randomusers/assets/avatars/pixel/27.jpg",
+    "social_media": {
+      "facebook": "https://www.facebook.com/johnsmith",
+      "twitter": "https://twitter.com/johnsmith",
+      "instagram": "https://www.instagram.com/johnsmith"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Jane Doe",
+    "city": "Los Angeles",
+    "age": 28,
+    "gender": "female",
+    "profile_picture": "https://xsgames.co/randomusers/assets/avatars/pixel/48.jpg",
+    "social_media": {
+      "facebook": "https://www.facebook.com/janedoe",
+      "twitter": "https://twitter.com/janedoe",
+      "instagram": "https://www.instagram.com/janedoe"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Bob Johnson",
+    "city": "Chicago",
+    "age": 42,
+    "gender": "male",
+    "profile_picture": "https://xsgames.co/randomusers/assets/avatars/pixel/43.jpg",
+    "social_media": {
+      "facebook": "https://www.facebook.com/bobjohnson",
+      "twitter": "https://twitter.com/bobjohnson",
+      "instagram": "https://www.instagram.com/bobjohnson"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Amy Williams",
+    "city": "Houston",
+    "age": 31,
+    "gender": "female",
+    "profile_picture": "https://xsgames.co/randomusers/assets/avatars/pixel/37.jpg",
+    "social_media": {
+      "facebook": "https://www.facebook.com/amywilliams",
+      "twitter": "https://twitter.com/amywilliams",
+      "instagram": "https://www.instagram.com/amywilliams"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Michael Brown",
+    "city": "Phoenix",
+    "age": 39,
+    "gender": "male",
+    "profile_picture": "https://xsgames.co/randomusers/assets/avatars/pixel/8.jpg",
+    "social_media": {
+      "facebook": "https://www.facebook.com/michaelbrown",
+      "twitter": "https://twitter.com/michaelbrown",
+      "instagram": "https://www.instagram.com/michaelbrown"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Emily Davis",
+    "city": "Philadelphia",
+    "age": 25,
+    "gender": "female",
+    "profile_picture": "https://xsgames.co/randomusers/assets/avatars/pixel/44.jpg",
+    "social_media": {
+      "facebook": "https://www.facebook.com/emilydavis",
+      "twitter": "https://twitter.com/emily",
+      "instagram": "https://www.instagram.com/michaelbrown"
+    }
+  }
+]
