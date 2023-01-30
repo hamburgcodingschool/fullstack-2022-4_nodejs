@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 This is in pug. These people don't exist.
+  table
+    tr
+      th Picture
+      th Name
+      th Age
+    each person in people
+      include includes/tr

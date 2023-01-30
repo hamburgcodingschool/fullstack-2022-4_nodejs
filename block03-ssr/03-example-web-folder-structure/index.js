@@ -1,12 +1,23 @@
 const _ = require("lodash");
 const express = require("express");
+const sass = require('node-sass-middleware')
+const path = require('path');
 const people = require("./people.json");
 
 const app = express();
 
 const port = 3000;
 
-app.set("view engine", "ejs");
+app.set("view engine", "pug");
+
+app.use(
+  sass({
+    src: path.join(__dirname, 'sass'),
+    dest: path.join(__dirname, 'public'),
+    debug: true,
+    force: true
+  })
+)
 app.use(express.static("public"))
 
 app.get("/", function(req, res) {
