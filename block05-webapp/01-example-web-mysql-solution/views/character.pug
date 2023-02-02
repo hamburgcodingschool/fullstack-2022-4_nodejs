@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  .character-image
+    +image(character.image, character.name)
+  h1 #{character.name}
+  p Race: #{character.race}
+  p Played by: #{character.actor}
+  a(href='/') < Back to the list

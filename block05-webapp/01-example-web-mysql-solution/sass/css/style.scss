@@ -1,28 +1,116 @@
 @import 'colors';
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: $backgroundColor;
-  color: $textColor;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #5e5e5e;
 }
 
 .container {
-  max-width: 1200px;
+  width: 80%;
   margin: 0 auto;
-  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.small-logo {
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px #8b8b8b;
+  margin-top: 50px;
 }
 
 table {
+  margin-top: 50px;
   border-collapse: collapse;
   width: 100%;
+  table-layout: fixed;
 }
+
 th, td {
-  border: 1px solid #dddddd;
-  padding: 8px;
+  padding: 20px;
   text-align: left;
 }
+
 th {
-  background-color: #dddddd;
+  background-color: #5e5e5e;
+  color: #fff;
+}
+
+td {
+  background-color: #f2f2f2;
+
+  img {
+    border: 3px solid #5e5e5e;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+}
+
+.character-image {
+  img {
+    border: 3px solid #5e5e5e;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+}
+
+a {
+  color: #e0a054;
+
+  &:hover {
+    color: #dcb687;
+  }
+}
+
+form, button {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 16px;
+  color: #5e5e5e;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #5e5e5e;
+  border-radius: 5px;
+}
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #5e5e5e;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+button {
+  background-color: #e0a054;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #dcb687;
+  }
 }

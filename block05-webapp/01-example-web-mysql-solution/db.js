@@ -1,11 +1,15 @@
-const mysql = require("mysql2");
+const mysql = require('mysql2/promise');
 
-const connection = mysql.createConnection({
+const options = {
     host: "127.0.0.1",
     port: 3306,
-    database: "nodejs_course",
+    database: "nodejs_course2",
     user: "root",
     password: ""
-});
+} 
+
+async function connection(){
+    return await mysql.createConnection(options);
+}
 
 exports.connection = connection;

@@ -1,14 +1,9 @@
 extends layout
 
 block content
+  .logo
+    +image('Logo.png', 'Logo')
   h1 Characters from Movies
-  table
-    tr
-      th Name
-      th Race
-      th Actor
-    each character in characters
-      tr
-        td #{character.name} 
-        td #{character.race}
-        td #{character.actor}
+  a(href='/characters/new')
+    button Add a new character
+  include includes/characters_table
