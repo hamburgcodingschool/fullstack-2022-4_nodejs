@@ -1,5 +1,5 @@
 {
-  "name": "01-example-rest-structure",
+  "name": "02-exercise-person-explorer",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "mysql2": "^3.0.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

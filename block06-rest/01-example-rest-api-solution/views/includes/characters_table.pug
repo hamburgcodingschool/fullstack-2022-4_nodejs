@@ -1,0 +1,20 @@
+table
+  tr
+    th Image
+    th Name
+    th Race
+    th Actor
+    th
+  each character in characters
+    tr
+      td
+        a(href=`/characters/${character.id}`)
+          +image(character.image, character.name)
+      td 
+        a(href=`/characters/${character.id}`) #{character.name} 
+      td 
+        a(href=`/race/${character.race}`) #{character.race}
+      td #{character.actor}
+      td
+        a(href=`/characters/${character.id}/delete`)
+          button Delete

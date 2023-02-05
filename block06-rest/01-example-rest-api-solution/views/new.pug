@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Add a new character
+  form(action="/characters" method="post")
+    label(for="name") Name
+    input(type="text" name="name" id="name")
+    label(for="race") Race
+    input(type="text" name="race" id="race")
+    label(for="actor") Actor
+    input(type="text" name="actor" id="actor")
+    label(for="image") Image
+    select(name="image" id="image")
+      each image in images
+        option(value=`${image}`) #{image}
+    button(type="submit") Add character
+  a(href='/') < Back to the list
