@@ -1,0 +1,13 @@
+table
+  tr
+    th Image
+    th Name
+    th Race
+    th Actor
+  each character in characters
+    tr
+      td
+        +image(character.image, character.name)
+      td #{character.name} 
+      td #{character.race}
+      td #{character.actor}
