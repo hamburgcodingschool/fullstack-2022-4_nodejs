@@ -1,0 +1,39 @@
+body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #5e5e5e; 
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center; 
+}
+
+
+table {
+  margin-top: 50px;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed; }
+
+th, td {
+  padding: 20px;
+  text-align: left; }
+
+th {
+  background-color: #5e5e5e;
+  color: #fff; }
+
+td {
+  background-color: #f2f2f2; }
+  td img {
+    border: 3px solid #5e5e5e;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; }
+
+.character-image img {
+  border: 3px solid #5e5e5e;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; }
