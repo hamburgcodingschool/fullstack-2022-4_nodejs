@@ -2,4 +2,23 @@ extends layout
 
 block content
   h1 Characters from Movies
-  p Welcome to the characters from movies app!
+  a(href='/create_character')
+    button Add a new character
+  table
+    tr
+      th Image
+      th Name
+      th Race
+      th Actor
+      th
+    each character in characters
+      tr
+        td
+          a(href=`/characters/${character.id}`)
+            +image(character.image, character.name)
+        td #{character.name}
+        td #{character.race}
+        td #{character.actor}
+        td
+          a(href=`/characters/${character.id}/delete`)
+            button Delete
